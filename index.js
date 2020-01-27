@@ -25,9 +25,9 @@ function nowServing (line) {
 
     let str  = `The line is currently: `;
 
-    for (let i = 1; i <= line.length; i++) {
+    for (let i = 0; i < line.length; i++) {
 
-      i === line.length ? str += `${i}. ${line[i]}` : str += `${i}. ${line[i]}, ` }
+      i === line.length-1 ? str += `${i+1}. ${line[i]}` : str += `${i+1}. ${line[i]}, ` }
 
     return str;
     }
