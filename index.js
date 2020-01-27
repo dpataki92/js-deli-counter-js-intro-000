@@ -25,10 +25,10 @@ function nowServing (line) {
     let str  = `The line is currently: `;
 
     for (let i = 0; i < line.length; i++) {
-      
-      i === line.length-1 ? str += `${i}. ${line[i]}` : str += `${i}. ${line[i]}, `;  
+
+      i === line.length-1 ? str += `${i}. ${line[i]}` : str += `${i}. ${line[i]}, `;
   }
 
     return str;
-  
+
 }
