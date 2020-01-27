@@ -15,7 +15,7 @@ function nowServing (line) {
   else {
     let first = line[0];
     line.shift();
-    return first;
+    return `Currently serving ${first}.`;
   }
   }
 
