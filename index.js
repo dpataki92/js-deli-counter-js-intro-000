@@ -17,6 +17,7 @@ function nowServing (line) {
     line.shift();
     return first;
   }
+  }
 
   function currentLine (line) {
 
@@ -26,8 +27,7 @@ function nowServing (line) {
 
     for (let i = 0; i < line.length; i++) {
 
-      i === line.length-1 ? str += `${i}. ${line[i]}` : str += `${i}. ${line[i]}, `;
-  }
+      i === line.length-1 ? str += `${i}. ${line[i]}` : str += `${i}. ${line[i]}, ` }
 
     return str;
-}
+    }
