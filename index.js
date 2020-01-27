@@ -30,5 +30,4 @@ function nowServing (line) {
   }
 
     return str;
-
 }
