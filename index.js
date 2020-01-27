@@ -11,7 +11,7 @@ function takeANumber (line, name) {
 
 function nowServing (line) {
 
-  if (line === []) {return 'There is nobody waiting to be served!'}
+  if (line === undefined) {return 'There is nobody waiting to be served!'}
   else {
     let first = line[0];
     line.shift();
@@ -21,13 +21,13 @@ function nowServing (line) {
 
   function currentLine (line) {
 
-    if (line === []) {return `The line is currently empty.`}
+    if (line === undefined) {return `The line is currently empty.`}
 
     let str  = `The line is currently: `;
 
-    for (let i = 0; i < line.length; i++) {
+    for (let i = 1; i <= line.length; i++) {
 
-      i === line.length-1 ? str += `${i}. ${line[i]}` : str += `${i}. ${line[i]}, ` }
+      i === line.length ? str += `${i}. ${line[i]}` : str += `${i}. ${line[i]}, ` }
 
     return str;
     }
